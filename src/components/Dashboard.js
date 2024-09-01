@@ -14,8 +14,6 @@ import {
   SpeakerIcon,
   HeadphonesIcon,
   ImageIcon,
-  FileIcon,
-  XIcon,
   SaveIcon,
 } from "lucide-react";
 import React, { useState, useRef } from "react";
@@ -122,11 +120,11 @@ const Dashboard = () => {
       <header className="flex justify-between items-center mb-10">
         <h1 className="text-3xl font-bold">Dashboard</h1>
         <div className="flex-grow flex justify-center space-x-4">
-          <a href="#" className="flex items-center space-x-2 hover:text-green-400">
+          <a href="/" className="flex items-center space-x-2 hover:text-green-400">
             <FileTextIcon className="w-5 h-5" />
             <span>Saved Documents</span>
           </a>
-          <a href="#" className="flex items-center space-x-2 hover:text-green-400">
+          <a href="/" className="flex items-center space-x-2 hover:text-green-400">
             <MessageSquareIcon className="w-5 h-5" />
             <span>Smart Chat</span>
           </a>

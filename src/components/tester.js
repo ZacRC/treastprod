@@ -63,17 +63,17 @@ const HeroSection = ({ blueToGreen }) => {
                 <nav
                     className="bg-gray-800 bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-full px-8 py-4 shadow-lg flex items-center space-x-8" >
                     <a
-                        href="#"
+                        href="/"
                         className="hover:text-gray-300 transition duration-300" >
                         About Us
                     </a>
                     <a
-                        href="#"
+                        href="/"
                         className="hover:text-gray-300 transition duration-300" >
                         Terms Of Service
                     </a>
                     <a
-                        href="#"
+                        href="/"
                         className="hover:text-gray-300 transition duration-300" >
                         Help Center
                     </a>
