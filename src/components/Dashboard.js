@@ -33,7 +33,7 @@ const Dashboard = () => {
   const handleLogout = async () => {
     try {
       const refreshToken = localStorage.getItem('refreshToken');
-      const response = await fetch('/api/logout/', {
+      const response = await fetch('http://157.230.234.50/api/logout/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ const Dashboard = () => {
     });
 
     try {
-      const uploadResponse = await fetch('/api/upload/', {
+      const uploadResponse = await fetch('http://157.230.234.50/api/upload/', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,
@@ -90,7 +90,7 @@ const Dashboard = () => {
       });
 
       if (uploadResponse.ok) {
-        const processResponse = await fetch('/api/process/', {
+        const processResponse = await fetch('http://157.230.234.50/api/process/', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,
